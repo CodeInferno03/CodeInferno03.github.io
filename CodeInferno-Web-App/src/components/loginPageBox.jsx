@@ -19,7 +19,16 @@ export default function LoginBox() {
         },
       }}
     >
-      <Paper elevation={3}>
+      <Paper 
+        elevation={3}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
+        }}>
+        <div>
+          <h1 style={{margin: '20px', fontFamily: 'Comic Sans, Arial, Monospace'}}>Mock Bank</h1>
+        </div>
         <LoginFields />
       </Paper>
     </Box>

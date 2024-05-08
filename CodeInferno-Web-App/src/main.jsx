@@ -7,6 +7,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 import MainPage from './pages/SlashPage.jsx'
+import SignUpPage from './pages/SignupPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,11 @@ const router = createBrowserRouter([
     path: "/login",
     element: <LoginPage />,
     errorElement: <div><p>Error rendering LoginPage.</p></div>
+  },
+  {
+    path: "/signup",
+    element: <SignUpPage />,
+    errorElement: <div><p>Error rendering SignUpPage.</p></div>
   }
 ])
 
