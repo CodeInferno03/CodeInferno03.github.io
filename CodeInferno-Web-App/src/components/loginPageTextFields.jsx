@@ -7,7 +7,7 @@ export default function LoginFields() {
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 1, width: '73ch' },
+        '& .MuiTextField-root': { m: 1, width: '72ch' },
       }}
       noValidate
       autoComplete="off"

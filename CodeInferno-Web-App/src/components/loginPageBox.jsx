@@ -10,11 +10,9 @@ export default function LoginBox() {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        //alignItems: 'center',
-        
         '& > :not(style)': {
-          m: 1,
-          width: 600,
+          m: "10%",
+          width: 650,
           height: 300,
         },
       }}
@@ -24,10 +22,14 @@ export default function LoginBox() {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center'
+          alignItems: 'center',
+          backgroundColor: 'white'
         }}>
         <div>
-          <h1 style={{margin: '20px', fontFamily: 'Comic Sans, Arial, Monospace'}}>Mock Bank</h1>
+          <h1 style={{
+            margin: '20px', 
+            fontFamily: 'Aptos, Arial, Monospace'
+          }}>Mock Bank</h1>
         </div>
         <LoginFields />
       </Paper>

@@ -7,7 +7,12 @@ export default function SignUpText() {
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 1, width: '25ch' },
+        '& .MuiTextField-root': { 
+          marginTop: 2, 
+          marginRight: 1, 
+          marginLeft: 1,
+          marginBottom: 0.7
+        },
       }}
       noValidate
       autoComplete="off"
@@ -15,44 +20,47 @@ export default function SignUpText() {
       <div>
         <TextField
           required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Hello World"
+          id="nameField"
+          label="First Name"
+          //defaultValue="Hello World"
+          sx = {{
+            width: '35ch'
+          }}
+        />
+        <TextField 
+          id="nameField"
+          label="Last Name"
+          sx = {{
+            width: '35ch'
+          }}
         />
         <TextField
-          disabled
-          id="outlined-disabled"
-          label="Disabled"
-          defaultValue="Hello World"
+          required
+          id="emailId"
+          label="Email"
+          // defaultValue="example@gmail.com"
+          sx={{
+            width: '72ch'
+          }}
         />
         <TextField
-          id="outlined-password-input"
+          required
+          id="passwordInput"
           label="Password"
           type="password"
-          autoComplete="current-password"
-        />
-        <TextField
-          id="outlined-read-only-input"
-          label="Read Only"
-          defaultValue="Hello World"
-          InputProps={{
-            readOnly: true,
+          // autoComplete="current-password"
+          sx={{
+            width: '72ch'
           }}
         />
         <TextField
-          id="outlined-number"
-          label="Number"
-          type="number"
-          InputLabelProps={{
-            shrink: true,
+          required
+          id="passwordConfirm"
+          label="Confirm Password"
+          type='password'
+          sx={{
+            width: '72ch'
           }}
-        />
-        <TextField id="outlined-search" label="Search field" type="search" />
-        <TextField
-          id="outlined-helperText"
-          label="Helper text"
-          defaultValue="Default Value"
-          helperText="Some important text"
         />
       </div>
     </Box>

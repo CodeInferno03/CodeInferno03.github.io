@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import LoginPage from './pages/LoginPage.jsx'
 import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import MainPage from './pages/SlashPage.jsx'
+import MainPage from './pages/PublicMainPage.jsx'
 import SignUpPage from './pages/SignupPage.jsx';
+import HomePage from './pages/HomePage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +24,11 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignUpPage />,
     errorElement: <div><p>Error rendering SignUpPage.</p></div>
+  },
+  {
+    path: "/home",
+    element: <HomePage />,
+    errorElement: <div><p>Error rendering HomePage</p></div>
   }
 ])
 
