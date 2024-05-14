@@ -14,40 +14,20 @@ export default function LoginFields() {
     >
       <div>
         <TextField
-          // required
-          id="outlined-required"
-          label="User Name"
+          required
+          id="loginEmail"
+          label="Email Id"
           // defaultValue="Hello World"
         />
 
         <TextField
-          id="outlined-required"
+          required
+          id="loginPassword"
           label="Password"
           type="password"
-          autoComplete="current-password"
+          // autoComplete="current-password"
         />
-        {/* <TextField
-          id="outlined-number"
-          label="Number"
-          type="number"
-          InputLabelProps={{
-            shrink: true,
-          }}
-        />
-        <TextField
-          id="outlined-helperText"
-          label="Helper text"
-          defaultValue="Default Value"
-          helperText="Some important text"
-        /> */}
       </div> 
     </Box>
   );
 }
-
-{/* <TextField
-disabled
-id="outlined-disabled"
-label="Disabled"
-defaultValue="Hello World"
-/> */}

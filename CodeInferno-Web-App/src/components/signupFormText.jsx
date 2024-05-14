@@ -37,7 +37,7 @@ export default function SignUpText() {
         <TextField
           required
           id="emailId"
-          label="Email"
+          label="Email Id"
           // defaultValue="example@gmail.com"
           sx={{
             width: '72ch'
