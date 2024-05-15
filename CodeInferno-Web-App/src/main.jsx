@@ -8,6 +8,7 @@ import {
 import MainPage from './pages/PublicMainPage.jsx'
 import SignUpPage from './pages/SignupPage.jsx';
 import HomePage from './pages/HomePage.jsx';
+import ProfilePage from './pages/ProfilePage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
     path: "/home",
     element: <HomePage />,
     errorElement: <div><p>Error rendering HomePage</p></div>
+  },
+  {
+    path: "/profile",
+    element: <ProfilePage />,
+    errorElement: <div><p>Error rendering ProfilePage</p></div>
   }
 ])
 

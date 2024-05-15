@@ -2,6 +2,7 @@
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import LoginFields from './loginPageTextFields';
+import LoginPageButtonGroup from './loginPageButtonGroup';
 
 export default function LoginBox() {
   return (
@@ -32,6 +33,7 @@ export default function LoginBox() {
           }}>Mock Bank</h1>
         </div>
         <LoginFields />
+        <LoginPageButtonGroup />
       </Paper>
     </Box>
   );

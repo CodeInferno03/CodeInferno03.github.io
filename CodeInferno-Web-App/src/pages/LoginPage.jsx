@@ -1,4 +1,4 @@
-import LoginBox from "../components/loginPageBox"
+import LoginBox from "../components/loginPage/loginPageBox"
 
 function LoginPage() {
 

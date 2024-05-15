@@ -1,6 +1,6 @@
 // import LoginBox from "../components/loginPageBox"
 
-import HomePageTitleBar from "../components/homePageTitleBar";
+import HomePageTitleBar from "../components/homePage/homePageTitleBar";
 
 function HomePage() {
 
