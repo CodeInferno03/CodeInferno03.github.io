@@ -16,6 +16,7 @@ export default function SignUpBox() {
           m: "6%",
           width: 650,
           height: 450,
+          fontFamily: 'Fira Sans, Arial, Monospace'
         },
       }}
     >
@@ -29,7 +30,6 @@ export default function SignUpBox() {
          }}>
           <h1 style={{
             margin: '20px', 
-            fontFamily: 'Fira-Sans, Arial, Monospace'
           }}>Sign Up Information</h1>
           <SignUpText />
           <SignUpPageButtonGroup />

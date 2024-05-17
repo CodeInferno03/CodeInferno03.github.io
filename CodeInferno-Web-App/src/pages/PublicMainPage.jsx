@@ -1,10 +1,11 @@
-import LoginRouteButton from "../components/mainPageButton";
+import MainPageTitleBar from "../components/publicMainPage/mainPageTitleBar";
+// import SignUpBox from "../components/signupPage/signupPageBox";
 
 function MainPage() {
 
     return (
         <>
-          <LoginRouteButton />
+          <MainPageTitleBar />
         </>
     );
 }

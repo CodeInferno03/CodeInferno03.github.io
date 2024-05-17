@@ -20,8 +20,7 @@ export default function LoginPageButtonGroup() {
     >
       <ButtonGroup variant="text" aria-label="Basic button group">
         <Button>Sign Up</Button>
-        <Button>Go To Home Page</Button>
-        <Button>Exit Login Page</Button>
+        <Button>Home Page</Button>
       </ButtonGroup>
     </Box>
   );

@@ -15,6 +15,7 @@ export default function LoginBox() {
           m: "10%",
           width: 650,
           height: 300,
+          fontFamily: 'Fira Sans, Arial, Monospace'
         },
       }}
     >
@@ -29,7 +30,6 @@ export default function LoginBox() {
         <div>
           <h1 style={{
             margin: '20px', 
-            fontFamily: 'Aptos, Arial, Monospace'
           }}>Mock Bank</h1>
         </div>
         <LoginFields />

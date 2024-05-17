@@ -11,13 +11,14 @@ export default function SignUpText() {
           marginTop: 2, 
           marginRight: 1, 
           marginLeft: 1,
-          marginBottom: 0.7
+          marginBottom: 0.7,
+          fontFamily: 'inherit'
         },
       }}
       noValidate
       autoComplete="off"
     >
-      <div>
+      <div style={{fontFamily: 'Fira Sans, Arial, Monospace'}}>
         <TextField
           required
           id="nameField"

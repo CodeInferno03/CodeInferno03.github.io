@@ -12,6 +12,7 @@ export default function SignUpPageButtonGroup() {
         alignItems: 'center',
         '& > *': {
           m: 1,
+          fontFamily: 'Fira Sans, Arial, Monospace'
         },
       }}
     >
