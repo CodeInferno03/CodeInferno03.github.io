@@ -1,10 +1,11 @@
+import DashBoardTitleBar from "../components/dashboardPage/dashboardTitleBar";
 
 
 function DashBoardPage() {
 
     return (
         <>
-          <h1 /> Not Built Yet!
+          <DashBoardTitleBar />
         </>
     );
 }

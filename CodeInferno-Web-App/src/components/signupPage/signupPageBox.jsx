@@ -2,6 +2,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import SignUpText from './signupFormText';
 import SignUpPageButtonGroup from './signupPageButtonGroup';
+import SignupPageButton from './signupPageButton';
 
 
 export default function SignUpBox() {
@@ -15,7 +16,7 @@ export default function SignUpBox() {
         '& > :not(style)': {
           m: "6%",
           width: 650,
-          height: 450,
+          height: 550,
           fontFamily: 'Fira Sans, Arial, Monospace'
         },
       }}
@@ -32,6 +33,7 @@ export default function SignUpBox() {
             margin: '20px', 
           }}>Sign Up Information</h1>
           <SignUpText />
+          <SignupPageButton />
           <SignUpPageButtonGroup />
         </Paper>
     </Box>

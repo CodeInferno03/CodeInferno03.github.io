@@ -2,8 +2,14 @@
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
+import { useNavigate } from 'react-router-dom';
 
-export default function LoginPageButtonGroup() {
+const LoginPageButtonGroup = () => {
+  const navigate = useNavigate();
+
+  const gotoSignupPage = () => { navigate('/signup'); }
+  const gotoHomePage = () => { navigate('/home'); }
+
   return (
     <Box
       sx={{
@@ -19,9 +25,11 @@ export default function LoginPageButtonGroup() {
       }}
     >
       <ButtonGroup variant="text" aria-label="Basic button group">
-        <Button>Sign Up</Button>
-        <Button>Home Page</Button>
+        <Button onClick={gotoSignupPage}>Sign Up</Button>
+        <Button onClick={gotoHomePage}>Home Page</Button>
       </ButtonGroup>
     </Box>
   );
 }
+
+export default LoginPageButtonGroup;

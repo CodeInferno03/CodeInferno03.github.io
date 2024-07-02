@@ -7,6 +7,7 @@ export default function SignUpText() {
     <Box
       component="form"
       sx={{
+        margin: 2,
         '& .MuiTextField-root': { 
           marginTop: 2, 
           marginRight: 1, 
