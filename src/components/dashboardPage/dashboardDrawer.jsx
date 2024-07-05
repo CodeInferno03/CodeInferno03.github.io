@@ -1,7 +1,7 @@
 // import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -27,7 +27,7 @@ const DashBoardDrawer = () => {
 
     const valObj = {
       'Profile': '/profile',
-      'Make New Account': '/create'
+      'Make New Account': '/createaccount'
     }
 
     navigate(valObj[val]); 

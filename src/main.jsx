@@ -11,6 +11,7 @@ import ProfilePage from './pages/ProfilePage.jsx';
 import DashBoardPage from './pages/DashboardPage.jsx';
 import TestPage from './pages/TestPage.jsx';
 import CreateAccountPage from './pages/CreateAccountPage.jsx';
+import { BoxCSSProvider } from './components/createAccountPage/boxProps.jsx';
 // import router from './routes/routeList.jsx';
 
 const router = createBrowserRouter([
@@ -40,7 +41,7 @@ const router = createBrowserRouter([
     errorElement: <div><p>Error rendering DashBoardPage</p></div>
   },
   {
-    path: '/create',
+    path: '/createaccount',
     element: <CreateAccountPage />,
     errorElement: <div><p>Error rendering Account Creation Page</p></div>
   },
@@ -53,6 +54,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BoxCSSProvider>
+      <RouterProvider router={router} />      
+    </BoxCSSProvider>
   </React.StrictMode>,
 );

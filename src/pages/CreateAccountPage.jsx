@@ -1,8 +1,10 @@
+import CreateAccountPageBox from "../components/createAccountPage/createAccountPageBox";
+
 function CreateAccountPage() {
 
     return (
         <>
-          <h1 /> Not Built Yet!
+          <CreateAccountPageBox />
         </>
     );
 }

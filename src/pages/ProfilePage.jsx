@@ -1,10 +1,11 @@
 // import LoginBox from "../components/loginPageBox"
+import ProfilePageBox from "../components/profilePage/profilePageBox";
 
 function ProfilePage() {
 
     return (
         <>
-          <h1 /> Not Built Yet!
+          <ProfilePageBox />
         </>
     );
 }
