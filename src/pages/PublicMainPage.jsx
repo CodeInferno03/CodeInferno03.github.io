@@ -1,11 +1,11 @@
-import MainPageTitleBar from "../components/publicMainPage/mainPageTitleBar";
+import MainPageBox from "../components/publicMainPage/mainPageBox";
 // import SignUpBox from "../components/signupPage/signupPageBox";
 
 function MainPage() {
 
     return (
         <>
-          <MainPageTitleBar />
+          <MainPageBox />
         </>
     );
 }

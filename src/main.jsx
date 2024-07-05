@@ -7,9 +7,10 @@ import {
 import LoginPage from './pages/LoginPage.jsx'
 import MainPage from './pages/PublicMainPage.jsx'
 import SignUpPage from './pages/SignupPage.jsx';
-import HomePage from './pages/HomePage.jsx';
 import ProfilePage from './pages/ProfilePage.jsx';
 import DashBoardPage from './pages/DashboardPage.jsx';
+import TestPage from './pages/TestPage.jsx';
+import CreateAccountPage from './pages/CreateAccountPage.jsx';
 // import router from './routes/routeList.jsx';
 
 const router = createBrowserRouter([
@@ -29,11 +30,6 @@ const router = createBrowserRouter([
     errorElement: <div><p>Error rendering SignUpPage.</p></div>
   },
   {
-    path: "/home",
-    element: <HomePage />,
-    errorElement: <div><p>Error rendering HomePage</p></div>
-  },
-  {
     path: "/profile",
     element: <ProfilePage />,
     errorElement: <div><p>Error rendering ProfilePage</p></div>
@@ -42,6 +38,16 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <DashBoardPage />,
     errorElement: <div><p>Error rendering DashBoardPage</p></div>
+  },
+  {
+    path: '/create',
+    element: <CreateAccountPage />,
+    errorElement: <div><p>Error rendering Account Creation Page</p></div>
+  },
+  {
+    path: '/test',
+    element: <TestPage />,
+    errorElement: <div><p>How the hell do u mess up the testing page XD</p></div>
   }
 ]);
 

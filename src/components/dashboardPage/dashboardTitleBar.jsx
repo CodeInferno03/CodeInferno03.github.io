@@ -4,15 +4,25 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+//import IconButton from '@mui/material/IconButton';
+//import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from 'react-router-dom';
+import DashBoardDrawer from './dashboardDrawer';
 
-export default function DashBoardTitleBar() {
+const DashBoardTitleBar = () => {
+  const navigate = useNavigate();
+
+  const logoutButton = () => { return navigate('/') };
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ display: 'flex', flexGrow: 1 }}>
+      <AppBar 
+      position="fixed"
+      sx={{
+        zIndex: (theme) => theme.zIndex.drawer + 1
+      }}>
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -20,13 +30,17 @@ export default function DashBoardTitleBar() {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Dashboard
           </Typography>
-          <Button color="inherit">Logout</Button>
+          <Button color="inherit" onClick={logoutButton}>Logout</Button>
         </Toolbar>
       </AppBar>
+      <DashBoardDrawer />
+      
     </Box>
   );
 }
+
+export default DashBoardTitleBar;

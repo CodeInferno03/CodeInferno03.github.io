@@ -8,7 +8,6 @@ const SignUpPageButtonGroup = () => {
   const navigate = useNavigate();
 
   const gotoLoginPage = () => { navigate('/login'); }
-  const gotoHomePage = () => { navigate('/home'); }
   const gotoPublicMainPage = () => { navigate('/'); }
 
 
@@ -26,8 +25,7 @@ const SignUpPageButtonGroup = () => {
     >
       <ButtonGroup variant="text" aria-label="Basic button group">
         <Button onClick={gotoLoginPage}>Login</Button>
-        <Button onClick={gotoHomePage}>Home Page</Button>
-        <Button onClick={gotoPublicMainPage}>Exit Sign Up</Button>
+        <Button onClick={gotoPublicMainPage}>Home Page</Button>
       </ButtonGroup>
     </Box>
   );
